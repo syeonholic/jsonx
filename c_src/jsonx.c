@@ -13,7 +13,7 @@ enc_rt_dtor(ErlNifEnv* env, void* obj){
     enif_free(entry2->ignored);
     entry2->ignored = NULL;
   }
-  entry2 = NULL;
+  entry1 = NULL;
 }
 
 
