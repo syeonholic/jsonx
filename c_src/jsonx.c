@@ -16,6 +16,7 @@ enc_rt_dtor(ErlNifEnv* env, void* obj){
   entry = NULL;
 }
 
+
 static int
 load(ErlNifEnv* env, void** priv_data, ERL_NIF_TERM load_info){
 
