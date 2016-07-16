@@ -3,6 +3,7 @@
 #include <string.h>
 #include "jsonx.h"
 
+
 static void
 enc_rt_dtor(ErlNifEnv* env, void* obj){
   EncEntry *entry = (EncEntry*)obj;
