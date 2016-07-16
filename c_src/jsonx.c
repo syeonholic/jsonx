@@ -6,14 +6,14 @@
 
 static void
 enc_rt_dtor(ErlNifEnv* env, void* obj){
-  EncEntry *entry = (EncEntry*)obj;
-  enif_release_binary(&entry->bin);
-  entry->bin.data = NULL;
-  if(entry->ignored){
-    enif_free(entry->ignored);
-    entry->ignored = NULL;
+  EncEntry *entry2 = (EncEntry*)obj;
+  enif_release_binary(&entry2->bin);
+  entry2->bin.data = NULL;
+  if(entry2->ignored){
+    enif_free(entry2->ignored);
+    entry2->ignored = NULL;
   }
-  entry = NULL;
+  entry2 = NULL;
 }
 
 
